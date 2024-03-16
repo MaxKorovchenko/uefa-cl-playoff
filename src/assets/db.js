@@ -1,34 +1,43 @@
+import arsenal from 'assets/images/Arsenal.png';
+import bayern from 'assets/images/Bayern_München.png';
+import atletico from 'assets/images/Atletico_Madrid.png';
+import borussia from 'assets/images/Borussia_Dortmund.png';
+import city from 'assets/images/Manchester_City.png';
+import real from 'assets/images/Real_Madrid.png';
+import psg from 'assets/images/FC_Paris_Saint-Germain.png';
+import barselona from 'assets/images/FC_Barcelona.png';
+
 export const clubs = [
   {
     title: 'Arsenal FC',
-    logo: 'https://example.com/arsenal-logo.png',
+    logo: arsenal,
   },
   {
     title: 'FC Bayern München',
-    logo: 'https://example.com/bayern-munich-logo.png',
+    logo: bayern,
   },
   {
     title: 'Club Atlético de Madrid',
-    logo: 'https://example.com/atletico-madrid-logo.png',
+    logo: atletico,
   },
   {
     title: 'Borussia Dortmund',
-    logo: 'https://example.com/borussia-dortmund-logo.png',
+    logo: borussia,
   },
   {
     title: 'Real Madrid CF',
-    logo: 'https://example.com/real-madrid-logo.png',
+    logo: real,
   },
   {
     title: 'Manchester City FC',
-    logo: 'https://example.com/man-city-logo.png',
+    logo: city,
   },
   {
     title: 'Paris Saint-Germain FC',
-    logo: 'https://example.com/psg-logo.png',
+    logo: psg,
   },
   {
     title: 'FC Barcelona',
-    logo: 'https://example.com/barcelona-logo.png',
+    logo: barselona,
   },
 ];
