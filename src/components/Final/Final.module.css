@@ -1,0 +1,38 @@
+.final {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 250px;
+  height: 500px;
+
+  background-color: rgb(161, 130, 130);
+}
+
+.final::before {
+  content: '';
+  position: absolute;
+  top: 250px;
+  left: -275px;
+  display: inline-block;
+  width: 275px;
+  height: 2px;
+  background-color: red;
+}
+
+.final::after {
+  content: '';
+  position: absolute;
+  top: 250px;
+  right: -275px;
+  display: inline-block;
+  width: 275px;
+  height: 2px;
+  background-color: red;
+}

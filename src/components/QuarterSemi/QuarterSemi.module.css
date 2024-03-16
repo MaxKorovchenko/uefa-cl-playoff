@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.half {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.half:last-child {
+  flex-direction: row-reverse;
+}
+
+.quarter {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.pair {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  height: 300px;
+
+  background-color: aqua;
+  outline: 1px solid red;
+}
+
+.first::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 150px;
+  display: inline-block;
+  width: 275px;
+  height: 2px;
+  background-color: red;
+}
+
+.second::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 150px;
+  display: inline-block;
+  width: 275px;
+  height: 2px;
+  background-color: red;
+}
+
+.third::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 75px;
+  display: inline-block;
+  width: 2px;
+  height: 50px;
+  background-color: red;
+}
+
+.third::after {
+  content: '';
+  position: absolute;
+  bottom: -52px;
+  left: 75px;
+  display: inline-block;
+  width: 2px;
+  height: 52px;
+  background-color: red;
+}
