@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/uefa-cl-playoff/static/css/main.68ba7f58.css",
+    "main.js": "/uefa-cl-playoff/static/js/main.7ff463dd.js",
+    "index.html": "/uefa-cl-playoff/index.html",
+    "main.68ba7f58.css.map": "/uefa-cl-playoff/static/css/main.68ba7f58.css.map",
+    "main.7ff463dd.js.map": "/uefa-cl-playoff/static/js/main.7ff463dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68ba7f58.css",
+    "static/js/main.7ff463dd.js"
+  ]
+}
