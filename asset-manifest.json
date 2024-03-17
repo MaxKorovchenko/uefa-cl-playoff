@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/uefa-cl-playoff/static/css/main.02b9b0f2.css",
-    "main.js": "/uefa-cl-playoff/static/js/main.90f89183.js",
+    "main.css": "/uefa-cl-playoff/static/css/main.e22a9a46.css",
+    "main.js": "/uefa-cl-playoff/static/js/main.21211eda.js",
     "static/media/Real_Madrid.png": "/uefa-cl-playoff/static/media/Real_Madrid.cf783e2f2831f39c5f4e.png",
     "static/media/Bayern_München.png": "/uefa-cl-playoff/static/media/Bayern_München.72e0d8c35d64589cb155.png",
     "static/media/FC_Paris_Saint-Germain.png": "/uefa-cl-playoff/static/media/FC_Paris_Saint-Germain.7cb1c76ecae49b2b06a2.png",
     "static/media/Manchester_City.png": "/uefa-cl-playoff/static/media/Manchester_City.a6339ae79ddeaf19b5d0.png",
     "static/media/Arsenal.png": "/uefa-cl-playoff/static/media/Arsenal.0624315e056392b2a50d.png",
     "static/media/Atletico_Madrid.png": "/uefa-cl-playoff/static/media/Atletico_Madrid.015e8a7bb7ff8b7ad2c5.png",
+    "static/media/cup.png": "/uefa-cl-playoff/static/media/cup.0247cb93000feb469f12.png",
     "static/media/Borussia_Dortmund.png": "/uefa-cl-playoff/static/media/Borussia_Dortmund.c08094269836b1c90dc1.png",
     "static/media/FC_Barcelona.png": "/uefa-cl-playoff/static/media/FC_Barcelona.a2ed4d41e977f75c626c.png",
     "index.html": "/uefa-cl-playoff/index.html",
-    "main.02b9b0f2.css.map": "/uefa-cl-playoff/static/css/main.02b9b0f2.css.map",
-    "main.90f89183.js.map": "/uefa-cl-playoff/static/js/main.90f89183.js.map"
+    "main.e22a9a46.css.map": "/uefa-cl-playoff/static/css/main.e22a9a46.css.map",
+    "main.21211eda.js.map": "/uefa-cl-playoff/static/js/main.21211eda.js.map"
   },
   "entrypoints": [
-    "static/css/main.02b9b0f2.css",
-    "static/js/main.90f89183.js"
+    "static/css/main.e22a9a46.css",
+    "static/js/main.21211eda.js"
   ]
 }
