@@ -10,13 +10,16 @@ export const Bracket = () => {
   const [secondFinalist, setSecondFinalist] = useState(null);
 
   return (
-    <div className={styles.container}>
-      <QuarterSemi
-        setFirstFinalist={setFirstFinalist}
-        setSecondFinalist={setSecondFinalist}
-      />
+    <>
+      <h1 className={styles.title}>UEFA Champion League Playoff 2024</h1>
+      <div className={styles.container}>
+        <QuarterSemi
+          setFirstFinalist={setFirstFinalist}
+          setSecondFinalist={setSecondFinalist}
+        />
 
-      <Final firstFinalist={firstFinalist} secondFinalist={secondFinalist} />
-    </div>
+        <Final firstFinalist={firstFinalist} secondFinalist={secondFinalist} />
+      </div>
+    </>
   );
 };

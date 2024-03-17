@@ -21,7 +21,7 @@ export const Final = ({ firstFinalist, secondFinalist }) => {
         {secondFinalist && <img src={secondFinalist} alt="logo" />}
       </div>
 
-      {winner && <p className={styles.message}>YES</p>}
+      {winner && <p className={styles.message}>PTN PNX</p>}
     </div>
   );
 };
