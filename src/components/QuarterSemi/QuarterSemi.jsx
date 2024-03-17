@@ -3,7 +3,7 @@ import { clubs } from 'assets/db';
 import styles from './QuarterSemi.module.css';
 import { useState } from 'react';
 
-export const QuarterSemi = () => {
+export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
   const [firstSemiFinalist, setFirstSemiFinalist] = useState(null);
   const [secondSemiFinalist, setSecondSemiFinalist] = useState(null);
   const [thirdSemiFinalist, setThirdSemiFinalist] = useState(null);
@@ -50,10 +50,16 @@ export const QuarterSemi = () => {
         </div>
 
         <div className={`${styles.pair} ${styles.third}`}>
-          <div className={styles.team}>
+          <div
+            className={styles.team}
+            onClick={() => setFirstFinalist(firstSemiFinalist)}
+          >
             {firstSemiFinalist && <img src={firstSemiFinalist} alt="logo" />}
           </div>
-          <div className={styles.team}>
+          <div
+            className={styles.team}
+            onClick={() => setFirstFinalist(secondSemiFinalist)}
+          >
             {secondSemiFinalist && <img src={secondSemiFinalist} alt="logo" />}
           </div>
         </div>
@@ -98,10 +104,16 @@ export const QuarterSemi = () => {
         </div>
 
         <div className={`${styles.pair} ${styles.third}`}>
-          <div className={styles.team}>
+          <div
+            className={styles.team}
+            onClick={() => setSecondFinalist(thirdSemiFinalist)}
+          >
             {thirdSemiFinalist && <img src={thirdSemiFinalist} alt="logo" />}
           </div>
-          <div className={styles.team}>
+          <div
+            className={styles.team}
+            onClick={() => setSecondFinalist(fourthSemiFinalist)}
+          >
             {fourthSemiFinalist && <img src={fourthSemiFinalist} alt="logo" />}
           </div>
         </div>
