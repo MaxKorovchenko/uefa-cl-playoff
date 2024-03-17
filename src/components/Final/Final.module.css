@@ -12,7 +12,9 @@
   width: 250px;
   height: 500px;
 
-  background-color: rgb(161, 130, 130);
+  border: 2px solid rgb(30, 26, 83);
+
+  /* background-color: rgb(161, 130, 130); */
 }
 
 .final::before {

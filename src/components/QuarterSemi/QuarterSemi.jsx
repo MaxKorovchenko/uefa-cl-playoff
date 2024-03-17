@@ -14,38 +14,46 @@ export const QuarterSemi = () => {
       <div className={styles.half}>
         <div className={styles.quarter}>
           <div className={`${styles.pair} ${styles.first}`}>
-            <img
-              onClick={() => setFirstSemiFinalist(clubs[0].logo)}
-              src={clubs[0].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setFirstSemiFinalist(clubs[0].logo)}
+                src={clubs[0].logo}
+                alt="logo"
+              />
+            </div>
 
-            <img
-              onClick={() => setFirstSemiFinalist(clubs[1].logo)}
-              src={clubs[1].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setFirstSemiFinalist(clubs[1].logo)}
+                src={clubs[1].logo}
+                alt="logo"
+              />
+            </div>
           </div>
           <div className={`${styles.pair} ${styles.first}`}>
-            <img
-              onClick={() => setSecondSemiFinalist(clubs[2].logo)}
-              src={clubs[2].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setSecondSemiFinalist(clubs[2].logo)}
+                src={clubs[2].logo}
+                alt="logo"
+              />
+            </div>
 
-            <img
-              onClick={() => setSecondSemiFinalist(clubs[3].logo)}
-              src={clubs[3].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setSecondSemiFinalist(clubs[3].logo)}
+                src={clubs[3].logo}
+                alt="logo"
+              />
+            </div>
           </div>
         </div>
 
         <div className={`${styles.pair} ${styles.third}`}>
-          <div>
+          <div className={styles.team}>
             {firstSemiFinalist && <img src={firstSemiFinalist} alt="logo" />}
           </div>
-          <div>
+          <div className={styles.team}>
             {secondSemiFinalist && <img src={secondSemiFinalist} alt="logo" />}
           </div>
         </div>
@@ -54,38 +62,46 @@ export const QuarterSemi = () => {
       <div className={styles.half}>
         <div className={styles.quarter}>
           <div className={`${styles.pair} ${styles.second}`}>
-            <img
-              onClick={() => setThirdSemiFinalist(clubs[4].logo)}
-              src={clubs[4].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setThirdSemiFinalist(clubs[4].logo)}
+                src={clubs[4].logo}
+                alt="logo"
+              />
+            </div>
 
-            <img
-              onClick={() => setThirdSemiFinalist(clubs[5].logo)}
-              src={clubs[5].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setThirdSemiFinalist(clubs[5].logo)}
+                src={clubs[5].logo}
+                alt="logo"
+              />
+            </div>
           </div>
           <div className={`${styles.pair} ${styles.second}`}>
-            <img
-              onClick={() => setFourthSemiFinalist(clubs[6].logo)}
-              src={clubs[6].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setFourthSemiFinalist(clubs[6].logo)}
+                src={clubs[6].logo}
+                alt="logo"
+              />
+            </div>
 
-            <img
-              onClick={() => setFourthSemiFinalist(clubs[7].logo)}
-              src={clubs[7].logo}
-              alt="logo"
-            />
+            <div className={styles.team}>
+              <img
+                onClick={() => setFourthSemiFinalist(clubs[7].logo)}
+                src={clubs[7].logo}
+                alt="logo"
+              />
+            </div>
           </div>
         </div>
 
         <div className={`${styles.pair} ${styles.third}`}>
-          <div>
+          <div className={styles.team}>
             {thirdSemiFinalist && <img src={thirdSemiFinalist} alt="logo" />}
           </div>
-          <div>
+          <div className={styles.team}>
             {fourthSemiFinalist && <img src={fourthSemiFinalist} alt="logo" />}
           </div>
         </div>
