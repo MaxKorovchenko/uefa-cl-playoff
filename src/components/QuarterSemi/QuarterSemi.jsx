@@ -9,6 +9,30 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
   const [thirdSemiFinalist, setThirdSemiFinalist] = useState(null);
   const [fourthSemiFinalist, setFourthSemiFinalist] = useState(null);
 
+  const handleFirstFinalistTop = () => {
+    if (firstSemiFinalist && secondSemiFinalist) {
+      setFirstFinalist(firstSemiFinalist);
+    }
+  };
+
+  const handleFirstFinalistBottom = () => {
+    if (firstSemiFinalist && secondSemiFinalist) {
+      setFirstFinalist(secondSemiFinalist);
+    }
+  };
+
+  const handleSecondFinalistTop = () => {
+    if (thirdSemiFinalist && fourthSemiFinalist) {
+      setSecondFinalist(thirdSemiFinalist);
+    }
+  };
+
+  const handleSecondFinalistBottom = () => {
+    if (thirdSemiFinalist && fourthSemiFinalist) {
+      setSecondFinalist(fourthSemiFinalist);
+    }
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.half}>
@@ -50,16 +74,10 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
         </div>
 
         <div className={`${styles.pair} ${styles.third}`}>
-          <div
-            className={styles.team}
-            onClick={() => setFirstFinalist(firstSemiFinalist)}
-          >
+          <div className={styles.team} onClick={handleFirstFinalistTop}>
             {firstSemiFinalist && <img src={firstSemiFinalist} alt="logo" />}
           </div>
-          <div
-            className={styles.team}
-            onClick={() => setFirstFinalist(secondSemiFinalist)}
-          >
+          <div className={styles.team} onClick={handleFirstFinalistBottom}>
             {secondSemiFinalist && <img src={secondSemiFinalist} alt="logo" />}
           </div>
         </div>
@@ -104,16 +122,10 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
         </div>
 
         <div className={`${styles.pair} ${styles.third}`}>
-          <div
-            className={styles.team}
-            onClick={() => setSecondFinalist(thirdSemiFinalist)}
-          >
+          <div className={styles.team} onClick={handleSecondFinalistTop}>
             {thirdSemiFinalist && <img src={thirdSemiFinalist} alt="logo" />}
           </div>
-          <div
-            className={styles.team}
-            onClick={() => setSecondFinalist(fourthSemiFinalist)}
-          >
+          <div className={styles.team} onClick={handleSecondFinalistBottom}>
             {fourthSemiFinalist && <img src={fourthSemiFinalist} alt="logo" />}
           </div>
         </div>

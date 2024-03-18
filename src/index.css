@@ -13,7 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
 
-  background: linear-gradient(blue, yellow);
+  background: linear-gradient(blue, yellow) fixed;
 }
 
 code {

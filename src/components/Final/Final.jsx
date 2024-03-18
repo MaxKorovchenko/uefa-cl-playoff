@@ -1,27 +1,45 @@
 import { useState } from 'react';
 
 import cup from 'assets/images/cup.png';
+import { clubs } from 'assets/db';
 
 import styles from './Final.module.css';
+import { Modal } from 'components/Modal/Modal';
 
 export const Final = ({ firstFinalist, secondFinalist }) => {
   const [winner, setWinner] = useState('');
 
-  const handleWinner = () => {
-    setWinner('orkam pizda');
+  const handleWinnerTop = () => {
+    const winnerClub = clubs.find(club => club.logo === firstFinalist);
+    if (firstFinalist && secondFinalist) {
+      setWinner(winnerClub.title);
+    }
+  };
+
+  const handleWinnerBottom = () => {
+    const winnerClub = clubs.find(club => club.logo === secondFinalist);
+    if (firstFinalist && secondFinalist) {
+      setWinner(winnerClub.title);
+    }
   };
 
   return (
     <div className={styles.final}>
-      <div className={styles.team} onClick={handleWinner}>
+      <div className={styles.team} onClick={handleWinnerTop}>
         {firstFinalist && <img src={firstFinalist} alt="logo" />}
       </div>
       <img src={cup} alt="Cup" />
-      <div className={styles.team} onClick={handleWinner}>
+      <div className={styles.team} onClick={handleWinnerBottom}>
         {secondFinalist && <img src={secondFinalist} alt="logo" />}
       </div>
 
-      {winner && <p className={styles.message}>PTN PNX</p>}
+      {winner && (
+        <Modal>
+          <p>Champions League Winner </p>
+          <p>2024</p>
+          {winner}
+        </Modal>
+      )}
     </div>
   );
 };

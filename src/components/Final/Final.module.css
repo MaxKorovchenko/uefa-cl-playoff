@@ -47,8 +47,6 @@
 
   width: 150px;
   height: 150px;
-
-  /* outline: 4px solid rgb(209, 89, 89); */
 }
 
 .message {
@@ -56,8 +54,8 @@
   top: 0;
   left: -200px;
 
-  font-size: 250px;
+  font-size: 100px;
   font-weight: 900;
-  text-shadow: 15px 15px rgb(22, 12, 12);
+  text-shadow: 3px 3px 5px rgb(235, 231, 231);
   color: rgb(42, 10, 122);
 }
