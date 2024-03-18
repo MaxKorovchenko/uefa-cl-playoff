@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uefa-cl-playoff/static/css/main.401449b3.css",
-    "main.js": "/uefa-cl-playoff/static/js/main.148cf851.js",
+    "main.css": "/uefa-cl-playoff/static/css/main.6c6632d7.css",
+    "main.js": "/uefa-cl-playoff/static/js/main.cd205be9.js",
     "static/media/Real_Madrid.png": "/uefa-cl-playoff/static/media/Real_Madrid.cf783e2f2831f39c5f4e.png",
     "static/media/Bayern_München.png": "/uefa-cl-playoff/static/media/Bayern_München.72e0d8c35d64589cb155.png",
     "static/media/FC_Paris_Saint-Germain.png": "/uefa-cl-playoff/static/media/FC_Paris_Saint-Germain.7cb1c76ecae49b2b06a2.png",
@@ -12,11 +12,11 @@
     "static/media/Borussia_Dortmund.png": "/uefa-cl-playoff/static/media/Borussia_Dortmund.c08094269836b1c90dc1.png",
     "static/media/FC_Barcelona.png": "/uefa-cl-playoff/static/media/FC_Barcelona.a2ed4d41e977f75c626c.png",
     "index.html": "/uefa-cl-playoff/index.html",
-    "main.401449b3.css.map": "/uefa-cl-playoff/static/css/main.401449b3.css.map",
-    "main.148cf851.js.map": "/uefa-cl-playoff/static/js/main.148cf851.js.map"
+    "main.6c6632d7.css.map": "/uefa-cl-playoff/static/css/main.6c6632d7.css.map",
+    "main.cd205be9.js.map": "/uefa-cl-playoff/static/js/main.cd205be9.js.map"
   },
   "entrypoints": [
-    "static/css/main.401449b3.css",
-    "static/js/main.148cf851.js"
+    "static/css/main.6c6632d7.css",
+    "static/js/main.cd205be9.js"
   ]
 }
