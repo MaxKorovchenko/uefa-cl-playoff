@@ -1,7 +1,8 @@
+import { useRef, useState } from 'react';
+
 import { clubs } from 'assets/db';
 
 import styles from './QuarterSemi.module.css';
-import { useRef, useState } from 'react';
 
 export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
   const [firstSemiFinalist, setFirstSemiFinalist] = useState(null);
@@ -24,7 +25,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
 
   const handleFirstFinalistTop = () => {
     if (firstSemiFinalist && secondSemiFinalist) {
-      secondSemiFinalistRef.current.style.filter = 'brightness(0.2)';
+      secondSemiFinalistRef.current.style.filter = 'brightness(0.3)';
       firstSemiFinalistRef.current.style.filter = 'brightness(1)';
       setFirstFinalist(firstSemiFinalist);
     }
@@ -32,7 +33,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
 
   const handleFirstFinalistBottom = () => {
     if (firstSemiFinalist && secondSemiFinalist) {
-      firstSemiFinalistRef.current.style.filter = 'brightness(0.2)';
+      firstSemiFinalistRef.current.style.filter = 'brightness(0.3)';
       secondSemiFinalistRef.current.style.filter = 'brightness(1)';
       setFirstFinalist(secondSemiFinalist);
     }
@@ -40,7 +41,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
 
   const handleSecondFinalistTop = () => {
     if (thirdSemiFinalist && fourthSemiFinalist) {
-      fourthSemiFinalistRef.current.style.filter = 'brightness(0.2)';
+      fourthSemiFinalistRef.current.style.filter = 'brightness(0.3)';
       thirdSemiFinalistRef.current.style.filter = 'brightness(1)';
       setSecondFinalist(thirdSemiFinalist);
     }
@@ -48,7 +49,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
 
   const handleSecondFinalistBottom = () => {
     if (thirdSemiFinalist && fourthSemiFinalist) {
-      thirdSemiFinalistRef.current.style.filter = 'brightness(0.2)';
+      thirdSemiFinalistRef.current.style.filter = 'brightness(0.3)';
       fourthSemiFinalistRef.current.style.filter = 'brightness(1)';
       setSecondFinalist(fourthSemiFinalist);
     }
@@ -63,7 +64,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
               <img
                 onClick={() => {
                   secondQuarterFinalist.current.style.filter =
-                    'brightness(0.2)';
+                    'brightness(0.3)';
                   firstQuarterFinalist.current.style.filter = 'brightness(1)';
                   setFirstSemiFinalist(clubs[0].logo);
                 }}
@@ -76,7 +77,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
             <div className={styles.team}>
               <img
                 onClick={() => {
-                  firstQuarterFinalist.current.style.filter = 'brightness(0.2)';
+                  firstQuarterFinalist.current.style.filter = 'brightness(0.3)';
                   secondQuarterFinalist.current.style.filter = 'brightness(1)';
                   setFirstSemiFinalist(clubs[1].logo);
                 }}
@@ -91,7 +92,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
               <img
                 onClick={() => {
                   fourthQuarterFinalist.current.style.filter =
-                    'brightness(0.2)';
+                    'brightness(0.3)';
                   thirdQuarterFinalist.current.style.filter = 'brightness(1)';
                   setSecondSemiFinalist(clubs[2].logo);
                 }}
@@ -104,7 +105,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
             <div className={styles.team}>
               <img
                 onClick={() => {
-                  thirdQuarterFinalist.current.style.filter = 'brightness(0.2)';
+                  thirdQuarterFinalist.current.style.filter = 'brightness(0.3)';
                   fourthQuarterFinalist.current.style.filter = 'brightness(1)';
                   setSecondSemiFinalist(clubs[3].logo);
                 }}
@@ -144,7 +145,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
             <div className={styles.team}>
               <img
                 onClick={() => {
-                  sixthQuarterFinalist.current.style.filter = 'brightness(0.2)';
+                  sixthQuarterFinalist.current.style.filter = 'brightness(0.3)';
                   fifthQuarterFinalist.current.style.filter = 'brightness(1)';
                   setThirdSemiFinalist(clubs[4].logo);
                 }}
@@ -157,7 +158,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
             <div className={styles.team}>
               <img
                 onClick={() => {
-                  fifthQuarterFinalist.current.style.filter = 'brightness(0.2)';
+                  fifthQuarterFinalist.current.style.filter = 'brightness(0.3)';
                   sixthQuarterFinalist.current.style.filter = 'brightness(1)';
                   setThirdSemiFinalist(clubs[5].logo);
                 }}
@@ -172,7 +173,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
               <img
                 onClick={() => {
                   eighthQuarterFinalist.current.style.filter =
-                    'brightness(0.2)';
+                    'brightness(0.3)';
                   seventhQuarterFinalist.current.style.filter = 'brightness(1)';
                   setFourthSemiFinalist(clubs[6].logo);
                 }}
@@ -186,7 +187,7 @@ export const QuarterSemi = ({ setFirstFinalist, setSecondFinalist }) => {
               <img
                 onClick={() => {
                   seventhQuarterFinalist.current.style.filter =
-                    'brightness(0.2)';
+                    'brightness(0.3)';
                   eighthQuarterFinalist.current.style.filter = 'brightness(1)';
                   setFourthSemiFinalist(clubs[7].logo);
                 }}

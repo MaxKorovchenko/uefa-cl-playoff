@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
+import { Modal } from 'components/Modal/Modal';
 import cup from 'assets/images/cup.png';
 import { clubs } from 'assets/db';
 
 import styles from './Final.module.css';
-import { Modal } from 'components/Modal/Modal';
 
 export const Final = ({ firstFinalist, secondFinalist }) => {
   const [winner, setWinner] = useState('');
