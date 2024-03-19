@@ -1,19 +1,26 @@
 .container {
   position: relative;
 
-  /* margin-top: 100px; */
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 15px;
-  width: 1230px;
+  padding: 20px 15px;
 
-  /* background-color: rgb(90, 101, 141); */
+  @media (min-width: 1024px) {
+    max-width: 1230px;
+    padding: 50px 15px;
+  }
 }
 
 .title {
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 45px;
+  font-size: 30px;
   color: aliceblue;
   text-shadow: 5px 5px black;
+
+  @media (min-width: 1024px) {
+    margin-top: 40px;
+    font-size: 45px;
+  }
 }

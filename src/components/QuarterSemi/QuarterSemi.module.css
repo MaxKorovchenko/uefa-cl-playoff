@@ -1,7 +1,13 @@
 .wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .half {
@@ -11,84 +17,138 @@
 }
 
 .half:last-child {
-  flex-direction: row-reverse;
+  flex-direction: row;
+
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+  }
 }
 
 .quarter {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 30px;
+
+  @media (min-width: 1024px) {
+    gap: 100px;
+  }
 }
 
 .pair {
   position: relative;
 
-  width: 150px;
-  height: 300px;
+  width: 75px;
+  height: 150px;
   border-radius: 6px;
-  box-shadow: 2px 2px 10px 5px rgb(238, 227, 227);
+  box-shadow: 1px 1px 5px 2px rgb(238, 227, 227);
 
   background-color: rgb(93, 121, 173);
-  /* outline: 2px solid rgb(213, 79, 79); */
+
+  @media (min-width: 1024px) {
+    width: 150px;
+    height: 300px;
+    box-shadow: 2px 2px 10px 5px rgb(238, 227, 227);
+  }
 }
 
 .team {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
+
+  @media (min-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .first::after {
   content: '';
   position: absolute;
   left: 0;
-  top: 150px;
+  top: 75px;
   display: inline-block;
-  width: 275px;
+  width: 165px;
   height: 2px;
   background-color: rgb(246, 243, 243);
+}
+
+@media (min-width: 1024px) {
+  .first::after {
+    top: 150px;
+    width: 275px;
+  }
 }
 
 .second::after {
   content: '';
   position: absolute;
-  right: 0;
-  top: 150px;
+  left: 0;
+  top: 75px;
   display: inline-block;
-  width: 275px;
+  width: 165px;
   height: 2px;
   background-color: rgb(246, 243, 243);
+}
+
+@media (min-width: 1024px) {
+  .second::after {
+    left: -125px;
+    top: 150px;
+    width: 275px;
+  }
 }
 
 .third::before {
   content: '';
   position: absolute;
-  top: -50px;
-  left: 75px;
+  top: -15px;
+  left: 37.5px;
   display: inline-block;
   width: 2px;
-  height: 50px;
+  height: 15px;
   background-color: rgb(246, 243, 243);
+}
+
+@media (min-width: 1024px) {
+  .third::before {
+    top: -50px;
+    left: 75px;
+    height: 50px;
+  }
 }
 
 .third::after {
   content: '';
   position: absolute;
-  bottom: -52px;
-  left: 75px;
+  bottom: -15px;
+  left: 37.5px;
   display: inline-block;
   width: 2px;
-  height: 52px;
+  height: 15px;
   background-color: rgb(246, 243, 243);
 }
 
+@media (min-width: 1024px) {
+  .third::after {
+    bottom: -52px;
+    left: 75px;
+    height: 52px;
+  }
+}
+
 img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 
   transition: transform 200ms ease-in-out;
+
+  @media (min-width: 1024px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 img:hover {
