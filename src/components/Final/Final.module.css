@@ -1,43 +1,60 @@
 .final {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
-  width: 250px;
-  height: 500px;
+  width: 125px;
+  height: 250px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px 5px rgb(59, 79, 168);
   border: 1px solid rgb(148, 146, 199);
 
   background-color: rgba(93, 121, 173, 0.3);
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 250px;
+    height: 500px;
+  }
 }
 
 .final::before {
   content: '';
   position: absolute;
-  top: 250px;
-  left: -275px;
   display: inline-block;
-  width: 275px;
-  height: 2px;
   background-color: rgb(246, 243, 243);
+}
+
+@media (min-width: 1024px) {
+  .final::before {
+    top: 250px;
+    left: -275px;
+    width: 275px;
+    height: 2px;
+  }
 }
 
 .final::after {
   content: '';
   position: absolute;
-  top: 250px;
-  right: -275px;
   display: inline-block;
-  width: 275px;
-  height: 2px;
   background-color: rgb(246, 243, 243);
+}
+
+@media (min-width: 1024px) {
+  .final::after {
+    top: 250px;
+    right: -275px;
+    width: 275px;
+    height: 2px;
+  }
 }
 
 .team {
@@ -45,17 +62,67 @@
   align-items: center;
   justify-content: center;
 
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
+
+  @media (min-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
-.message {
+.firstTopLine {
   position: absolute;
-  top: 0;
-  left: -200px;
+  top: -60px;
+  left: 62.5px;
+  width: 2px;
+  height: 60px;
 
-  font-size: 100px;
-  font-weight: 900;
-  text-shadow: 3px 3px 5px rgb(235, 231, 231);
-  color: rgb(42, 10, 122);
+  background-color: aliceblue;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.secondTopLine {
+  position: absolute;
+  top: -60px;
+  left: -116px;
+  width: 180px;
+  height: 2px;
+
+  background-color: aliceblue;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.firstBottomLine {
+  position: absolute;
+  bottom: -60px;
+  left: 62.5px;
+  width: 2px;
+  height: 60px;
+
+  background-color: aliceblue;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.secondBottomLine {
+  position: absolute;
+  bottom: -60px;
+  left: -116px;
+  width: 180px;
+  height: 2px;
+
+  background-color: aliceblue;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }

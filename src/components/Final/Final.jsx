@@ -25,6 +25,11 @@ export const Final = ({ firstFinalist, secondFinalist }) => {
 
   return (
     <div className={styles.final}>
+      <div className={styles.firstTopLine}></div>
+      <div className={styles.secondTopLine}></div>
+      <div className={styles.firstBottomLine}></div>
+      <div className={styles.secondBottomLine}></div>
+
       <div className={styles.team} onClick={handleWinnerTop}>
         {firstFinalist && <img src={firstFinalist} alt="logo" />}
       </div>

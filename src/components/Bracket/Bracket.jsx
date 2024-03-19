@@ -18,7 +18,7 @@ export const Bracket = () => {
           setSecondFinalist={setSecondFinalist}
         />
 
-        {/* <Final firstFinalist={firstFinalist} secondFinalist={secondFinalist} /> */}
+        <Final firstFinalist={firstFinalist} secondFinalist={secondFinalist} />
       </div>
     </>
   );
