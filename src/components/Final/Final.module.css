@@ -35,6 +35,15 @@
 @media (min-width: 1024px) {
   .final::before {
     top: 250px;
+    left: -172px;
+    width: 172px;
+    height: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .final::before {
+    top: 250px;
     left: -275px;
     width: 275px;
     height: 2px;
@@ -49,6 +58,15 @@
 }
 
 @media (min-width: 1024px) {
+  .final::after {
+    top: 250px;
+    right: -175px;
+    width: 175px;
+    height: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
   .final::after {
     top: 250px;
     right: -275px;
