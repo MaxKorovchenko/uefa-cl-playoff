@@ -106,8 +106,8 @@
 .secondTopLine {
   position: absolute;
   top: -60px;
-  left: -116px;
-  width: 180px;
+  left: -113px;
+  width: 177px;
   height: 2px;
 
   background-color: aliceblue;
@@ -134,8 +134,8 @@
 .secondBottomLine {
   position: absolute;
   bottom: -60px;
-  left: -116px;
-  width: 180px;
+  left: -113px;
+  width: 177px;
   height: 2px;
 
   background-color: aliceblue;
