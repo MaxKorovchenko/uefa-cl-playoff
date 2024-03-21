@@ -1,8 +1,8 @@
 import { createPortal } from 'react-dom';
 import { Fireworks } from 'fireworks-js';
+import { useEffect, useRef } from 'react';
 
 import styles from './Modal.module.css';
-import { useEffect, useRef } from 'react';
 
 const modalRoot = document.querySelector('#modal-root');
 
