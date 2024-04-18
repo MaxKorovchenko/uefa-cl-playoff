@@ -9,14 +9,6 @@ import barselona from 'assets/images/FC_Barcelona.png';
 
 export const clubs = [
   {
-    title: 'Arsenal FC',
-    logo: arsenal,
-  },
-  {
-    title: 'FC Bayern München',
-    logo: bayern,
-  },
-  {
     title: 'Club Atlético de Madrid',
     logo: atletico,
   },
@@ -25,19 +17,27 @@ export const clubs = [
     logo: borussia,
   },
   {
-    title: 'Real Madrid CF',
-    logo: real,
-  },
-  {
-    title: 'Manchester City FC',
-    logo: city,
-  },
-  {
     title: 'Paris Saint-Germain FC',
     logo: psg,
   },
   {
     title: 'FC Barcelona',
     logo: barselona,
+  },
+  {
+    title: 'Arsenal FC',
+    logo: arsenal,
+  },
+  {
+    title: 'FC Bayern München',
+    logo: bayern,
+  },
+  {
+    title: 'Real Madrid CF',
+    logo: real,
+  },
+  {
+    title: 'Manchester City FC',
+    logo: city,
   },
 ];
