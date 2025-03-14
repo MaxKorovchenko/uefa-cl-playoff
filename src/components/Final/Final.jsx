@@ -41,7 +41,7 @@ export const Final = ({ firstFinalist, secondFinalist }) => {
       {winner && (
         <Modal>
           <p>Champions League Winner </p>
-          <p>2024</p>
+          <p>2025</p>
           {winner}
         </Modal>
       )}
