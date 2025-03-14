@@ -11,7 +11,7 @@ export const Bracket = () => {
 
   return (
     <>
-      <h1 className={styles.title}>UEFA Champions League Playoff 2024</h1>
+      <h1 className={styles.title}>UEFA Champions League Playoff 2025</h1>
       <div className={styles.container}>
         <QuarterSemi
           setFirstFinalist={setFirstFinalist}
