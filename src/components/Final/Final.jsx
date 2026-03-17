@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { Modal } from 'components/Modal/Modal';
 import cup from 'assets/images/cup.png';
@@ -8,19 +8,37 @@ import styles from './Final.module.css';
 
 export const Final = ({ firstFinalist, secondFinalist }) => {
   const [winner, setWinner] = useState('');
+  const [showModal, setShowModal] = useState(false);
+
+  const firstImg = useRef();
+  const secondImg = useRef();
+
+  useEffect(() => {
+    if (!winner) return;
+
+    const timer = setTimeout(() => {
+      setShowModal(true);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, [winner]);
 
   const handleWinnerTop = () => {
+    if (!firstFinalist || !secondFinalist) return;
+
     const winnerClub = clubs.find(club => club.logo === firstFinalist);
-    if (firstFinalist && secondFinalist) {
-      setWinner(winnerClub.title);
-    }
+    setWinner(winnerClub.title);
+    firstImg.current.style.filter = 'brightness(1)';
+    secondImg.current.style.filter = 'brightness(0.3)';
   };
 
   const handleWinnerBottom = () => {
+    if (!firstFinalist || !secondFinalist) return;
+
     const winnerClub = clubs.find(club => club.logo === secondFinalist);
-    if (firstFinalist && secondFinalist) {
-      setWinner(winnerClub.title);
-    }
+    setWinner(winnerClub.title);
+    firstImg.current.style.filter = 'brightness(0.3)';
+    secondImg.current.style.filter = 'brightness(1)';
   };
 
   return (
@@ -31,17 +49,19 @@ export const Final = ({ firstFinalist, secondFinalist }) => {
       <div className={styles.secondBottomLine}></div>
 
       <div className={styles.team} onClick={handleWinnerTop}>
-        {firstFinalist && <img src={firstFinalist} alt="logo" />}
+        {firstFinalist && <img src={firstFinalist} alt="logo" ref={firstImg} />}
       </div>
       <img src={cup} alt="Cup" />
       <div className={styles.team} onClick={handleWinnerBottom}>
-        {secondFinalist && <img src={secondFinalist} alt="logo" />}
+        {secondFinalist && (
+          <img src={secondFinalist} alt="logo" ref={secondImg} />
+        )}
       </div>
 
-      {winner && (
+      {showModal && (
         <Modal>
           <p>Champions League Winner </p>
-          <p>2025</p>
+          <p>2026</p>
           {winner}
         </Modal>
       )}
