@@ -9,7 +9,8 @@ import barselona from 'assets/images/FC_Barcelona.png';
 // import inter from 'assets/images/FC_Internazionale_Milano.png';
 // import villa from 'assets/images/Aston Villa F.C.png';
 import liverpool from 'assets/images/FC_Liverpool_Logo.png';
-import bodo from 'assets/images/FK Bodø Glimt.png';
+// import bodo from 'assets/images/FK Bodø Glimt.png';
+import sporting from 'assets/images/Sporting_Clube_de_Portugal.png';
 
 export const clubs = [
   {
@@ -37,8 +38,8 @@ export const clubs = [
     logo: atletico,
   },
   {
-    title: 'FK Bodø Glimt',
-    logo: bodo,
+    title: 'Sporting Clube de Portugal',
+    logo: sporting,
   },
   {
     title: 'Arsenal FC',
